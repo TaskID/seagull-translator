@@ -14,6 +14,8 @@ function msg(msg, bitflag)
     util.toast(msg, bitflag or TOAST_ALL)
 end
 
+-- CHANGE KEY AND REGION HERE
+
 Subscription_Key = "YOUR_KEY_HERE"
 Subscription_Region = "YOUR_REGION_HERE"
 
