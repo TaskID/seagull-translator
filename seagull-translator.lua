@@ -15,6 +15,8 @@ function msg(msg, bitflag)
 end
 
 -- CHANGE KEY AND REGION HERE
+-- Microsoft Azure Translation Service
+-- https://portal.azure.com/#blade/Microsoft_Azure_ProjectOxford/CognitiveServicesHub/TextTranslation
 
 Subscription_Key = "YOUR_KEY_HERE"
 Subscription_Region = "YOUR_REGION_HERE"
@@ -27,6 +29,8 @@ languageTo = 'en'
 languageSendAs = 'en'
 
 msg("Seagull Translator Script loaded.")
+
+menu.divider(menu.my_root(), "Seagull Translator")
 
 messages = menu.list(menu.my_root(), "Chat Messages", {"translatelist"}, "A list of all received chat messages. To translate a message, select it and press enter. The description of the action will be updated with the translated message. The source language is automatically recognised.\nTo clear the message history, just restart the script.")
 menu.action(menu.my_root(), "Send Translated Message", {"translatesend", "st"}, "Sends the given message in the language set in \"Translate sent to\".", function(on_click)
