@@ -16,6 +16,8 @@ end
 
 -- CHANGE KEY AND REGION HERE
 -- Microsoft Azure Translation Service
+-- https://portal.azure.com/#create/Microsoft.CognitiveServicesTextTranslation
+-- https://docs.microsoft.com/en-us/azure/cognitive-services/translator/quickstart-translator
 -- https://portal.azure.com/#blade/Microsoft_Azure_ProjectOxford/CognitiveServicesHub/TextTranslation
 
 Subscription_Key = "YOUR_KEY_HERE"
